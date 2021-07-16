@@ -20,8 +20,8 @@ stv.init = function(){
 //---------------------------------------
 stv.Tag = function(map, lat, lng){
   this.map_obj = map;
-  this.lat = lat;
-  this.lng = lng;
+  this.lat = plat;
+  this.lng = plng;
   this.setMap(map);
 }
 stv.Tag.prototype = new google.maps.OverlayView();
@@ -70,8 +70,8 @@ stv.Tag.prototype.inspect_projection = function(disp_x, disp_y){
   var pow = function(x){ return x * x; }
 
   //Kakudo //////////////////////////////////////////
-  var diff_lat = this.lat - camera.lat;
-  var diff_lng = this.lng - camera.lng;
+  var diff_lat = plat - camera.lat;
+  var diff_lng = plon - camera.lng;
 
   var tan = diff_lat / diff_lng;
   var digree = (Math.atan(tan) / (2 * Math.PI)) * 360;
