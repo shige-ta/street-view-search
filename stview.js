@@ -21,7 +21,7 @@ stv.init = function(){
 stv.Tag = function(map, lat, lng){
   this.map_obj = map;
   this.lat = plat;
-  this.lng = plng;
+  this.lng = plon;
   this.setMap(map);
 }
 stv.Tag.prototype = new google.maps.OverlayView();
