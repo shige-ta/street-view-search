@@ -106,7 +106,7 @@ stv.Map = function(map_elem, stv_elem){
 const updatemap = async () => {
   let word = document.getElementById('word').value;
 
-  url = `http://nominatim.openstreetmap.org/search?q=${word}&format=json`
+  url = `https://nominatim.openstreetmap.org/search?q=${word}&format=json`
   console.log(url);
   const data = await fetch(url);
   d = await data.json();
